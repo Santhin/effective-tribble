@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "easypartnering"
+version = "0.1.0"
+description = ""
+authors = ["Santhin <psierkin@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Scrapy = "^2.5.0"
+html-text = "^0.5.2"
+jupyter = "^1.0.0"
+notebook = "^6.3.0"
+pandas = "^1.2.4"
+scrapy-crawl-once = "^0.1.1"
+sklearn = "^0.0"
+scikit-learn = "^0.24.2"
+
+[tool.poetry.dev-dependencies]
+jupyter-tabnine = "^1.2.2"
+jupyter_nbextensions_configurator = "^0.4.1"
+python-language-server = {extras = ["all"], version = "^0.36.2"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

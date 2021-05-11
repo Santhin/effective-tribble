@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "7ef243fb-d409-435b-8c98-ef8cd14f8fa6",
+		"name": "xkom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CategoryList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "X-API-Key",
+						"value": "sJSgnQXySmp6pqNV",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://mobileapi.x-kom.pl/api/v1/xkom/categories?groupIds=2,4,7,5,6,8,64,12",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"x-kom",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"xkom",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "groupIds",
+							"value": "2,4,7,5,6,8,64,12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemIdList",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "sJSgnQXySmp6pqNV",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://mobileapi.x-kom.pl/api/v1/xkom/products?productQuery.criteria.groupIds=2,4,7,5,6,8,64,12&productQuery.pagination.currentPage=1&productQuery.pagination.pageSize=100",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"x-kom",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"xkom",
+						"products"
+					],
+					"query": [
+						{
+							"key": "productQuery.criteria.useAutoFuzziness",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "productQuery.childCategorySort",
+							"value": "priority%20desc",
+							"disabled": true
+						},
+						{
+							"key": "productQuery.criteria.groupIds",
+							"value": "2,4,7,5,6,8,64,12"
+						},
+						{
+							"key": "productQuery.criteria.categoryIds",
+							"value": "159",
+							"disabled": true
+						},
+						{
+							"key": "productQuery.criteria.expand",
+							"value": "Features%2CDepartments%2CProductMarks%2CSeo",
+							"disabled": true
+						},
+						{
+							"key": "productQuery.pagination.currentPage",
+							"value": "1"
+						},
+						{
+							"key": "productQuery.pagination.pageSize",
+							"value": "100"
+						},
+						{
+							"key": "productQuery.sort",
+							"value": "Popularity%20desc",
+							"disabled": true
+						},
+						{
+							"key": "productQuery.criteria.groupByAlternatives",
+							"value": "false",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Item",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "sJSgnQXySmp6pqNV",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://mobileapi.x-kom.pl/api/v1/xkom/products/604862",
+					"protocol": "https",
+					"host": [
+						"mobileapi",
+						"x-kom",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"xkom",
+						"products",
+						"604862"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
